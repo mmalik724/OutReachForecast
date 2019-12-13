@@ -7,7 +7,7 @@ public class Program {
 
     public static void main(String[] args){
 
-        System.out.println("Next five days Best outreach forcast for Minneapolis");
+        System.out.println("Next five days best outreach forecast for Minneapolis");
         RequestSpecification request = RestAssured.given();
         request.header("Content-Type","application/json");
         Response response = request.get("http://api.openweathermap.org/data/2.5/forecast?q=minneapolis,us&units=imperial&APPID=09110e603c1d5c272f94f64305c09436");
